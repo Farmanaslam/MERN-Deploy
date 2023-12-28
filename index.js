@@ -13,7 +13,7 @@ const userRouter = require('./routes/user')
 main().catch(err => console.log(err));
 
 async function main() {
-  await mongoose.connect(process.env.MONGO_URL);
+  await mongoose.connect("mongodb+srv://Farman:Farman%4011@cluster0.dqfgkay.mongodb.net/?retryWrites=true&w=majority");
   console.log('database connected')
 }
 //Schema
